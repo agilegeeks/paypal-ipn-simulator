@@ -1,0 +1,22 @@
+html
+  head
+    title Paypal command
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+  body
+    div.container
+      div.row.justify-content-md-center
+        div.col-md-auto
+          h1 Paypal IPN Simulator
+          h5.text-center Below you can inspect your payload
+      br
+      form(method="POST" action="/pay")
+        dl.row.justify-content-md-center  
+          each val, index in query
+            dt.col-sm-3
+              p.text-right=index
+            dd.col-sm-9
+              input(class="form-control" name=index value=val)
+              
+        div.row
+          div.col-lg-12
+            button(class='btn btn-success float-right' type='submit') Simulate Pay

@@ -1,0 +1,18 @@
+{
+  "name": "paypal_ipn_simulator",
+  "version": "0.0.1",
+  "description": "Localhost Paypal IPN simulator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Agile Geeks <office@agilegeeks.ro>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "moment": "^2.21.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}
